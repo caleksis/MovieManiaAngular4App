@@ -1,0 +1,6 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a *ngIf="currentPage != 1" class="page-link" (click)="changePage(currentPage - 1)">&laquo; Prev</a></li>
+    <li class="page-item"><a class="page-link" *ngIf="currentPage != pageCount" (click)="changePage(currentPage + 1)">Next &raquo;</a></li>
+  </ul>
+</nav>
